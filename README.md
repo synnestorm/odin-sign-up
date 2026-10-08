@@ -27,3 +27,9 @@ npm install
 ```
 
 ### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
