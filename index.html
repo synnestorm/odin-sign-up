@@ -31,24 +31,38 @@
                 </div>
                 <div class="sign-up">
                     <h2>Let's do this!</h2>
-                    <form>
-                        <label for="firstname">First name:</label>
-                        <input type="text" name="firstname" id="firstname" class="blue">
-                        <label for="lastname">Last name:</label>
-                        <input type="text" name="lastname" id="lastname" class="blue">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" class="blue">
-                        <label for="phone">Phone number:</label>
-                        <input type="number" name="phone" id="phone" class="blue">
-                        <label for="password">Password:</label>
-                        <input type="text" name="password" id="password" class="red">
-                        <label for="c-password">Confirm password:</label>
-                        <input type="text" name="c-password" id="c-password" class="red">
+                    <form id="signup-form">
+                        <fieldset>
+                            <label for="firstname">First name:</label>
+                            <input type="text" name="firstname" id="firstname" class="blue" placeholder="Thor" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="lastname">Last name:</label>
+                            <input type="text" name="lastname" id="lastname" class="blue" placeholder="Odinson"
+                                required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" class="blue" placeholder="thor@odinson.com"
+                                required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" name="phone" id="phone" class="blue">
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" class="red" minlength="8" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="c-password">Confirm password:</label>
+                            <input type="password" name="c-password" id="c-password" class="red" minlength="8" required>
+                        </fieldset>
                     </form>
 
                 </div>
                 <div class="footer">
-                    <button>Create Account</button>
+                    <button type="submit" form="signup-form">Create Account</button>
                     <p class="account">Already have an account? <span class="link">Log in</span></p>
                 </div>
             </div>
