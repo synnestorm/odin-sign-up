@@ -71,6 +71,10 @@ h1 {
   max-width: 650px;
 }
 
+.heading-text {
+  padding-top: 40px;
+}
+
 .heading,
 .footer {
   width: 100%;
@@ -175,5 +179,10 @@ button:hover {
   .footer,
   .sign-up {
     height: auto;
+    padding: 10px;
+  }
+
+  .heading-text {
+    padding: 5px;
   }
 }
